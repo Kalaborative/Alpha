@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+body {
+	font-family: 'Fredoka One', cursive;
+	background: linear-gradient(to right, #96fbc4, #f9f586);
+}
+
+.loading-gif {
+	display: block;
+	margin: auto;
+}
+
+.container {
+	border-radius: 1em;
+	font-family: 'Nunito', sans-serif;
+	font-size: large;
+	padding: 1em;
+	background: #ffffffa6;
+	margin: auto;
+	margin-top: 1em;
+	width: 50%;
+}
+
+.row {
+	margin: 0;
+}
+
+.introText {
+}
+
+.questionText {
+color: #4ee08c;
+}
+
+.choiceBox {
+box-shadow: 0px 3px 20px #ab979769;
+text-align: center;
+border-radius: 1em;
+margin: 1em;
+max-width: 11em;
+background: #9aedf5ad;
+padding: 1em;
+}
+
+.choiceBox:hover {
+	transform: scale(0.9);
+}
+
+.selected {
+	border: 9px solid #0299bb;
+}
+
+.textNext {
+	margin-left: 80%;
+}
+
+.textNext:hover {
+	text-decoration: none;
+}
+
+.choiceBox img:nth-of-type(2) {
+	overflow: overlay;
+	position: absolute;
+	transform: translate(190%, -310%);
+}

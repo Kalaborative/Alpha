@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AlphaStore</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/confirm.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">AlphaStore</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="container">
+	<img src="static/img/tailspin.gif" class="loading-gif">
+	<div class="row">
+		<header>
+			<h1 class="introText">Great! Just check these to confirm.</h1>
+			<hr>
+			<br>
+		</header>
+	</div>
+	<div class="row">
+		<h2 class="questionText">You chose these options:</h2>
+		<br>
+	</div>
+	<div class="textWrapper">
+		<div class="row resultRow">CATEGORY <span class="textRight">{{ cat }}</span></div>
+		<div class="row resultRow">METHOD <span class="textRight">{{ met }}</span></div>
+		<div class="row resultRow">RANGE <span class="textRight">{{ ran }}</span></div>
+	</div>
+	<div class="row align-items-end">
+		<a href="/wizard3"><i class="fas fa-angle-double-left"></i>  Back</a>
+		<!-- Button trigger modal -->
+		<button type="button" class="textNext btn btn-primary" data-toggle="modal" data-target="#successPopup">
+		  Finish
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="successPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel"><b>Success</b> 😄</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Thanks! Now you can sit back and relax. Your best options will be displayed in a moment. 
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<div class="row" id="errorText"></div>
+</div>
+
+{# <div class="row" id="question">
+	<button class="btn btn-primary btn-lg btn-block" id="setLocation">Click here to set your location.</button>
+</div>
+<span>
+	<ul id="results">
+	</ul>
+</span>
+ #}
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$(".row").hide();
+	$(".textWrapper").hide();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="static/js/sample4.js"></script>
+</body>
+</html>

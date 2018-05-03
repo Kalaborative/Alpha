@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+body {
+	background: linear-gradient(to right, #a8edea, #fed6e3);
+	font-family: 'Fredoka One', cursive;
+}
+
+.jumbotron {
+	background-color: #06060600;
+	margin: 2em;
+	border-radius: 1em;
+	box-shadow: 0 4px 8px 0 rgba(198, 112, 112, 0.42), 0 6px 20px 0 rgba(135, 165, 167, 0.37);
+	padding-top: 1em;
+}
+
+.card {
+	background-color: #06060600;
+	border-radius: 1em;
+	height: 27em;
+	box-shadow: 0px 6px 16px 0px #c1b5bc8f
+}
+
+.first-item {
+	font-size: xx-large;
+}
+
+.nav-link {
+	padding-bottom: 1px;
+}
+
+.nav-link:hover {
+	border-bottom: 3px solid blue;
+}
+
+.text-title {
+	margin-top: 1em;
+}
+
+.circle {
+	position: absolute;
+    top: -70%;
+    left: 40%;
+    border-radius: 50%;
+    overflow: overlay;
+    height: 25em;
+    width: 25em;
+    background: #ffffff80;
+}
+
+#wallet {
+	float: right;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.card-title {
+	padding-top: 1em;
+}
